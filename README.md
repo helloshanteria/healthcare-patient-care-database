@@ -34,11 +34,31 @@ Next, I added fictional patients, healthcare providers, departments, and appoint
 
 ### 4. Finding Information with SQL
 
-I wrote SQL queries to search and connect information across the tables. For example, I could find patients with scheduled appointments, see their appointment dates, and identify which providers they were seeing.
+After adding sample information, I used SQL to answer questions about patients, appointments, and healthcare providers. Each question helped me practice finding and connecting information in different ways.
 
-![SQL query connecting patients with their appointments](screenshots/patient_appointment_join.png)
+**Which patients have appointments, and what are their statuses?**
 
-This query brings patient names, appointment dates, and appointment statuses together in one set of results.
+I connected patient and appointment records to see names, appointment dates, and whether appointments were scheduled, completed, or cancelled.
+
+![Patient and appointment SQL query and results](screenshots/patient_appointment_join.png)
+
+**Which patients have scheduled appointments?**
+
+I narrowed the results to show only scheduled appointments. Two patients appeared in the results.
+
+![SQL query showing scheduled appointments](screenshots/scheduled_appointments.png)
+
+**Which patients have scheduled appointments, and which providers are they seeing?**
+
+I connected patient, appointment, and provider information to see who each patient was scheduled to see.
+
+![SQL query connecting patients, appointments, and providers](screenshots/patient_provider_join.png)
+
+**Which department has the most scheduled appointments?**
+
+I counted scheduled appointments by department. In my sample data, Cardiology and Neurology were tied with one each.
+
+![SQL query counting scheduled appointments by department](screenshots/department_appointments.png)
 
 ### 5. Checking for Errors
 
