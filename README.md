@@ -25,7 +25,7 @@ After finishing the diagram, I used a MySQL Workbench feature called **Forward E
 
 ![MySQL Workbench showing the database was created successfully](screenshots/forward_engineering_success.png)
 
-You can also view the [SQL file used to create the database structure](healthcare_database_schema.sql).
+The SQL file used to create the database structure is also included in this repository.
 
 ### 3. Adding Sample Information
 
