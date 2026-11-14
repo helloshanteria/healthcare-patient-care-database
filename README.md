@@ -16,7 +16,6 @@ I began by creating an Enhanced Entity-Relationship (EER) diagram in MySQL Workb
 
 ![EER diagram showing the four tables and their relationships](screenshots/database_eer_diagram.png)
 
-*Figure 1. EER diagram of my Healthcare Patient Care Coordination System, designed in MySQL Workbench.*
 
 ### 2. Forward Engineering
 
@@ -24,7 +23,6 @@ After completing the model, I used MySQL Workbench's **Forward Engineering** fea
 
 ![MySQL Workbench Forward Engineering finished successfully](screenshots/forward_engineering_success.png)
 
-*Figure 2. MySQL Workbench confirmation that Forward Engineering completed successfully.*
 
 The generated database schema is saved in [`healthcare_database_schema.sql`](healthcare_database_schema.sql).
 
