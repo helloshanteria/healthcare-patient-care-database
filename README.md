@@ -22,6 +22,16 @@ I began by creating an Enhanced Entity-Relationship (EER) diagram in MySQL Workb
 
 After completing the model, I used MySQL Workbench's **Forward Engineering** feature to generate and execute the SQL statements that created the database tables. This step transformed the visual design into an implemented relational database **before** I began inserting records.
 
+![MySQL Workbench generated SQL statements during Forward Engineering](screenshots/forward_engineering_sql.png)
+
+*Figure 2. Forward Engineering SQL script generated from the database model, including `CREATE TABLE` statements.*
+
+![MySQL Workbench Forward Engineering finished successfully](screenshots/forward_engineering_success.png)
+
+*Figure 3. MySQL Workbench confirmation that Forward Engineering completed successfully.*
+
+The generated database schema is saved in [`healthcare_database_schema.sql`](healthcare_database_schema.sql).
+
 ### 3. Data Insertion
 
 I populated the four tables with fictional departments, providers, patients, and appointments using SQL `INSERT` statements. These sample records provided data for testing the relationships and writing queries.
