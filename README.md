@@ -1,65 +1,65 @@
 # Healthcare Patient Care Coordination System
 
-**MySQL Workbench | SQL | Database Design**
+**College Database Project | MySQL Workbench | SQL**
 
-## Project Overview
+## About This Project
 
-For my Introduction to Databases class at Georgia Gwinnett College, I created a healthcare database to organize information about patients, healthcare providers, departments, and appointments.
+For my Introduction to Databases class at Georgia Gwinnett College, I built a database to organize patient information, healthcare providers, departments, and appointments.
 
-The goal was to learn how to design related tables, create a database from a model, add sample data, and use SQL to work with that data.
+Think of it as a way to keep related healthcare information in one place. Instead of looking through separate lists, you can connect the information to answer questions like: **Which patient has an appointment, and which provider are they seeing?**
+
+This is a learning project, not a system used by a real healthcare organization.
 
 ## How I Built It
 
-### 1. Database Design
+### 1. Planning the Database
 
-I started by creating an Enhanced Entity-Relationship (EER) diagram in MySQL Workbench. My design includes four tables: `PATIENT`, `HEALTHCARE_PROVIDER`, `DEPARTMENT`, and `APPOINTMENT`.
+I started by drawing a diagram in MySQL Workbench to plan how the information would be organized.
 
-I used primary and foreign keys to connect the tables and show how the information relates.
+I created four tables for patients, healthcare providers, departments, and appointments. I then connected them so the database could keep track of how the information relates.
 
-![EER diagram showing the four tables and their relationships](screenshots/database_eer_diagram.png)
+![Diagram showing how the four database tables connect](screenshots/database_eer_diagram.png)
 
-### 2. Forward Engineering
+### 2. Creating the Database
 
-Once my diagram was complete, I used the Forward Engineering feature in MySQL Workbench to generate the SQL needed to create the tables. This helped me see how the database design turns into actual tables in MySQL.
+After finishing the diagram, I used a MySQL Workbench feature called **Forward Engineering**. It turned my design into the SQL instructions needed to create the database tables.
 
-![MySQL Workbench Forward Engineering finished successfully](screenshots/forward_engineering_success.png)
+![MySQL Workbench showing the database was created successfully](screenshots/forward_engineering_success.png)
 
-I also saved the generated SQL here: [healthcare_database_schema.sql](healthcare_database_schema.sql).
+You can also view the [SQL file used to create the database structure](healthcare_database_schema.sql).
 
-### 3. Adding Data
+### 3. Adding Sample Information
 
-Next, I used `INSERT` statements to add fictional patient, provider, department, and appointment records. This gave me data to practice writing queries and checking whether the tables were connected correctly.
+Next, I added fictional patients, healthcare providers, departments, and appointments. This gave me information to work with while practicing SQL, the language used to communicate with a database.
 
-### 4. Writing SQL Queries
+### 4. Finding Information with SQL
 
-I practiced using `SELECT`, `JOIN`, and `WHERE` to retrieve information from multiple tables. For example, I wrote queries to find patients with scheduled appointments and see which providers they were assigned to.
+I wrote SQL queries to search and connect information across the tables. For example, I could find patients with scheduled appointments, see their appointment dates, and identify which providers they were seeing.
 
-I also worked with SQL concepts like `COUNT`, `GROUP BY`, and `ORDER BY` as part of learning how to summarize and sort data.
+### 5. Checking for Errors
 
-### 5. Testing the Database
+I also tested how the database handles incorrect information. For example, I tried adding an appointment for a patient who wasn't in the database.
 
-I tested what happens when I try to add data that doesn't follow the database rules. For example, I tried adding an appointment with a patient ID that didn't exist.
+I added a rule to limit appointment statuses to **Scheduled**, **Completed**, or **Cancelled**. These tests helped me understand how a database can prevent certain mistakes.
 
-I also added a `CHECK` constraint so appointment statuses would be limited to `Scheduled`, `Completed`, or `Cancelled`. Testing invalid entries helped me understand why constraints matter.
-
-Some SQL statements from my classwork were written to produce errors on purpose, so they shouldn't all be run together as a setup script.
+Some of my class exercises intentionally included incorrect entries to test these rules.
 
 ## Tools I Used
 
-- **MySQL Workbench** — creating the EER diagram, forward engineering, and running SQL
-- **MySQL** — storing the tables and sample data
-- **SQL** — inserting records, writing queries, and testing constraints
+- **MySQL Workbench:** To design the database and work with it
+- **MySQL:** To store and organize the information
+- **SQL:** To add, find, and check information
 
 ## What I Learned
 
-One of my biggest takeaways was seeing how everything connects. I started with a diagram, turned it into database tables, added records, and then used SQL to pull information from those tables.
+This project helped me see how a database comes together, from planning the tables to using them to answer questions.
 
-I also learned that it's important to think about table relationships and data rules before adding information. When something didn't work, testing it helped me understand what the database was checking and why.
+I also learned why connecting information correctly matters. A database isn't just about storing records. It's about organizing them so the information is useful and mistakes can be caught.
 
 ## What's Next
 
-I want to keep building on this project by adding more tables and relationships as I learn more about database design. I'd also like to explore using Python or R to analyze appointment data and create visualizations.
+I'd like to expand the project by adding more tables and connecting more types of healthcare information. As I continue learning, I also want to use Python or R to explore the data and create charts.
 
 ---
 
-*This is a class project. All patient and provider information is fictional.*
+*All patient and provider information in this project is fictional and used for classwork.*
