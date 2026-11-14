@@ -36,6 +36,10 @@ Next, I added fictional patients, healthcare providers, departments, and appoint
 
 I wrote SQL queries to search and connect information across the tables. For example, I could find patients with scheduled appointments, see their appointment dates, and identify which providers they were seeing.
 
+![SQL query connecting patients with their appointments](screenshots/patient_appointment_join.png)
+
+This query brings patient names, appointment dates, and appointment statuses together in one set of results.
+
 ### 5. Checking for Errors
 
 I also tested how the database handles incorrect information. For example, I tried adding an appointment for a patient who wasn't in the database.
