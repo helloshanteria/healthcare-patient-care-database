@@ -1,6 +1,5 @@
 # Healthcare Patient Care Coordination System
 
-**College Database Project | MySQL Workbench | SQL**
 
 ## About This Project
 
