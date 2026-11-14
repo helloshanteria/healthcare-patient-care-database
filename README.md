@@ -30,7 +30,31 @@ You can also view the [SQL file used to create the database structure](healthcar
 
 ### 3. Adding Sample Information
 
-Next, I added fictional patients, healthcare providers, departments, and appointments. This gave me information to work with while practicing SQL, the language used to communicate with a database.
+Next, I added fictional information to each of the four tables. I used SQL to enter the records and then checked that they appeared in the database.
+
+**Departments**
+
+I started by adding four departments: Cardiology, Neurology, Primary Care, and Orthopedics.
+
+![SQL statements and results showing four healthcare departments](screenshots/department_data.png)
+
+**Healthcare providers**
+
+Next, I added four healthcare providers and assigned each one to a department.
+
+![SQL statements and results showing healthcare providers](screenshots/healthcare_provider_data.png)
+
+**Patients**
+
+I added four fictional patients, including their names, dates of birth, and contact information.
+
+![SQL statements and results showing fictional patient records](screenshots/patient_data.png)
+
+**Appointments**
+
+Finally, I added four appointments, each connected to a patient and healthcare provider. The records included scheduled, completed, and cancelled appointments.
+
+![SQL statements and results showing appointment records](screenshots/appointment_data.png)
 
 ### 4. Finding Information with SQL
 
