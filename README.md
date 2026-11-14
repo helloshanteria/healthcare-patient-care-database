@@ -86,11 +86,15 @@ I counted scheduled appointments by department. In my sample data, Cardiology an
 
 ### 5. Checking for Errors
 
-I also tested how the database handles incorrect information. For example, I tried adding an appointment for a patient who wasn't in the database.
+I also tested whether my database could catch incorrect information.
 
-I added a rule to limit appointment statuses to **Scheduled**, **Completed**, or **Cancelled**. These tests helped me understand how a database can prevent certain mistakes.
+For example, I tried adding an appointment with a patient ID that didn't exist and another without a patient ID. MySQL rejected both entries because appointments need to be connected to a valid patient.
 
-Some of my class exercises intentionally included incorrect entries to test these rules.
+![MySQL Workbench showing errors for invalid and missing patient IDs](screenshots/patient_id_error_testing.png)
+
+I also tested an appointment status by typing `Scheduld` instead of `Scheduled`. The database rejected it because I had set a rule allowing only **Scheduled**, **Completed**, or **Cancelled**.
+
+These tests helped me see how database rules can prevent mistakes before incorrect information gets saved.
 
 ## Tools I Used
 
